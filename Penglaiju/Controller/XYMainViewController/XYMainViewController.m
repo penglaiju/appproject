@@ -30,14 +30,14 @@
 {
     [super loadView];
     [self.view addSubview:self.webView];
-    NSURL *url = [NSURL URLWithString:@"https://www.penglaiju.com"];
-    NSURLRequest* request = [NSURLRequest requestWithURL:url];
-    [self.webView loadRequest:request];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self showNavigationBar:NO title:nil leftButtonStyle:XYButtonStyleNone rightButtonStyle:XYButtonStyleNone];
+    NSURL *url = [NSURL URLWithString:@"https://www.penglaiju.com"];
+    NSURLRequest* request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
 }
 
 #pragma mark --  UIWebViewDelegate
